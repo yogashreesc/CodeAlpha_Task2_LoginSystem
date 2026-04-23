@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-
+// Function to register user
 void registerUser() {
     string username, password;
 
@@ -13,14 +13,14 @@ void registerUser() {
     cout << "Enter password: ";
     cin >> password;
 
-    ofstream file("users.txt", ios::app); 
+    ofstream file("users.txt", ios::app); // append mode
     file << username << " " << password << endl;
     file.close();
 
     cout << "Registration successful!\n";
 }
 
-
+// Function to login user
 void loginUser() {
     string username, password;
     string fileUser, filePass;
@@ -40,10 +40,11 @@ void loginUser() {
             break;
         }
     }
+
     file.close();
 
     if (found)
-        cout << "Login successful! Welcome " << username << " 😊\n";
+        cout << "Login successful! Welcome " << username << endl;
     else
         cout << "Invalid username or password!\n";
 }
