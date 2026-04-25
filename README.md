@@ -82,7 +82,7 @@ int main() {
 ```
 ## Sample Output
 
-[![Output](IMG-20260426_002149.jpg)](IMG-20260426_002149.jpg)
+![Output](IMG_20260426_002149.jpg)
 
 ---
 
