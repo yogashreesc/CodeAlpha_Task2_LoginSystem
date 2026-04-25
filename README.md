@@ -1,9 +1,18 @@
+ Login & Registration System (C++)
+
+Description
+
+This project is a simple Login and Registration System developed using C++. It allows users to register and log in using file handling to store and verify credentials.
+
+---
+
+ Code
+```cpp
 #include <iostream>
 #include <fstream>
 #include <string>
 using namespace std;
 
-// Function to register user
 void registerUser() {
     string username, password;
 
@@ -13,14 +22,13 @@ void registerUser() {
     cout << "Enter password: ";
     cin >> password;
 
-    ofstream file("users.txt", ios::app); // append mode
+    ofstream file("users.txt", ios::app);
     file << username << " " << password << endl;
     file.close();
 
     cout << "Registration successful!\n";
 }
 
-// Function to login user
 void loginUser() {
     string username, password;
     string fileUser, filePass;
@@ -71,3 +79,14 @@ int main() {
 
     return 0;
 }
+```
+
+Sample Output
+
+"Output" (output.jpg)
+
+---
+
+Author
+
+Yogashree S C
